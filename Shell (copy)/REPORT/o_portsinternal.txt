@@ -1,0 +1,5 @@
+Discovered open port 80/tcp on 151.101.193.67
+Discovered open port 443/tcp on 151.101.193.67
+80/tcp  open  http-proxy     Varnish
+443/tcp open  ssl/http-proxy Varnish
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port

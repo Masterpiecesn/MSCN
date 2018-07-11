@@ -1,0 +1,28 @@
+[3J[H[2J Currently scanning: Starting.   |   Screen View: Unique Hosts                 
+                                                                               
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                 
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ Currently scanning: Starting.   |   Screen View: Unique Hosts                 
+                                                                               
+ 1 Captured ARP Req/Rep packets, from 1 hosts.   Total size: 42                
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 10.20.1.1       00:21:29:aa:bb:2e      1      42  Cisco-Linksys, LLC          
+ Currently scanning: 10.20.0.0/16   |   Screen View: Unique Hosts              
+                                                                               
+ 2 Captured ARP Req/Rep packets, from 1 hosts.   Total size: 84                
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 10.20.1.1       00:21:29:aa:bb:2e      2      84  Cisco-Linksys, LLC          
+ Currently scanning: 10.20.1.0/16   |   Screen View: Unique Hosts              
+                                                                               
+ 5 Captured ARP Req/Rep packets, from 2 hosts.   Total size: 228               
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 10.20.1.1       00:21:29:aa:bb:2e      4     168  Cisco-Linksys, LLC          
+ 10.20.1.10      00:1d:7e:29:d7:0a      1      60  Cisco-Linksys, LLC          

@@ -1,0 +1,498 @@
+Disallow:
+Disallow:
+/ads/
+/aol/
+/audio/
+/beta/
+/browsers/
+/cl/
+/cnews/
+/cnn_adspaces
+/cnnbeta/
+/cnnintl_adspaces
+/development
+/editionssi
+/help/cnnx.html
+/NewsPass
+/NOKIA
+/partners/
+/pipeline/
+/pointroll/
+/POLLSERVER/
+/pr/
+/privacy
+/PV/
+/Quickcast/
+/quickcast/
+/QUICKNEWS/
+/search/
+/terms
+/test/
+/virtual/
+/WEB-INF/
+/web.projects/
+/webview/
+/partners/ipad/live-video.json
+/ads/
+/aol/
+/audio/
+/beta/
+/browsers/
+/cl/
+/cnews/
+/cnn_adspaces
+/cnnbeta/
+/cnnintl_adspaces
+/development
+/editionssi
+/help/cnnx.html
+/NewsPass
+/NOKIA
+/partners/
+/pipeline/
+/pointroll/
+/POLLSERVER/
+/pr/
+/privacy
+/PV/
+/Quickcast/
+/quickcast/
+/QUICKNEWS/
+/search/
+/terms
+/test/
+/virtual/
+/WEB-INF/
+/web.projects/
+/webview/
+/partners/ipad/live-video.json
+/ads/
+/aol/
+/audio/
+/beta/
+/browsers/
+/cl/
+/cnews/
+/cnn_adspaces
+/cnnbeta/
+/cnnintl_adspaces
+/development
+/editionssi
+/help/cnnx.html
+/NewsPass
+/NOKIA
+/partners/
+/pipeline/
+/pointroll/
+/POLLSERVER/
+/pr/
+/privacy
+/PV/
+/Quickcast/
+/quickcast/
+/QUICKNEWS/
+/search/
+/terms
+/test/
+/virtual/
+/WEB-INF/
+/web.projects/
+/webview/
+/partners/ipad/live-video.json
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-07-11 14:02 EDT
+NSE: Loaded 148 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:02
+Completed NSE at 14:02, 0.00s elapsed
+Initiating NSE at 14:02
+Completed NSE at 14:02, 0.00s elapsed
+Initiating Ping Scan at 14:02
+Scanning cnn.com (151.101.65.67) [4 ports]
+Completed Ping Scan at 14:02, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:02
+Completed Parallel DNS resolution of 1 host. at 14:02, 0.01s elapsed
+Initiating SYN Stealth Scan at 14:02
+Scanning cnn.com (151.101.65.67) [1000 ports]
+Discovered open port 80/tcp on 151.101.65.67
+Discovered open port 443/tcp on 151.101.65.67
+Completed SYN Stealth Scan at 14:02, 10.39s elapsed (1000 total ports)
+Initiating Service scan at 14:02
+Scanning 2 services on cnn.com (151.101.65.67)
+Completed Service scan at 14:02, 15.23s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against cnn.com (151.101.65.67)
+Retrying OS detection (try #2) against cnn.com (151.101.65.67)
+Initiating Traceroute at 14:02
+Completed Traceroute at 14:02, 0.16s elapsed
+Initiating Parallel DNS resolution of 7 hosts. at 14:02
+Completed Parallel DNS resolution of 7 hosts. at 14:02, 0.09s elapsed
+NSE: Script scanning 151.101.65.67.
+Initiating NSE at 14:02
+Completed NSE at 14:02, 5.68s elapsed
+Initiating NSE at 14:02
+Completed NSE at 14:02, 0.00s elapsed
+Nmap scan report for cnn.com (151.101.65.67)
+Host is up (0.044s latency).
+Other addresses for cnn.com (not scanned): 151.101.193.67 151.101.1.67 151.101.129.67 2a04:4e42:600::323 2a04:4e42::323 2a04:4e42:200::323 2a04:4e42:400::323
+Not shown: 998 filtered ports
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     Varnish
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Varnish
+|_http-title: Did not follow redirect to http://www.cnn.com/
+443/tcp open  ssl/http-proxy Varnish
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS
+|_http-server-header: Varnish
+|_http-title: Did not follow redirect to https://www.cnn.com/
+| ssl-cert: Subject: commonName=turner-tls.map.fastly.net/organizationName=Fastly, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:turner-tls.map.fastly.net, DNS:*.api.cnn.com, DNS:*.api.cnn.io, DNS:*.api.electiontracker.cnn.com, DNS:*.api.platform.cnn.com, DNS:*.arabic.cnn.com, DNS:*.artemis.turner.com, DNS:*.beta.next.cnn.com, DNS:*.blogs.cnn.com, DNS:*.client.appletv.cnn.com, DNS:*.cnn.com, DNS:*.cnn.io, DNS:*.cnnlabs.com, DNS:*.cnnmoney.com, DNS:*.cnnmoneystream.com, DNS:*.cnnv2.com, DNS:*.config.outturner.com, DNS:*.corporatemobile.outturner.com, DNS:*.data.api.cnn.io, DNS:*.edition.cnn.com, DNS:*.edition.i.cdn.cnn.com, DNS:*.electiontracker.cnn.com, DNS:*.go.cnn.com, DNS:*.greatbig.com, DNS:*.greatbigstory.com, DNS:*.greatbigstory.se, DNS:*.i.cdn.cnn.com, DNS:*.markets.money.cnn.io, DNS:*.money.cnn.com, DNS:*.moneystream.cnn.com, DNS:*.next.cnn.com, DNS:*.odm.platform.cnn.com, DNS:*.outturner.com, DNS:*.platform.cnn.com, DNS:*.section-content.money.cnn.com, DNS:*.stage.next.cnn.com, DNS:*.travel.cnn.com, DNS:*.turner.com, DNS:*.www.i.cdn.cnn.com, DNS:admin.cnnmoney.ch, DNS:api.electiontracker.cnn.com, DNS:api.etp.cnn.com, DNS:api.platform.cnn.com, DNS:app.cnn.io, DNS:arabic.cnn.com, DNS:client.appletv.cnn.com, DNS:cnn.com, DNS:cnn.io, DNS:cnnlabs.com, DNS:cnnmoney.ch, DNS:cnnmoney.com, DNS:compositor.api.cnn.com, DNS:content.cnnmoney.ch, DNS:dev.admin.cnnmoney.ch, DNS:dev.client.appletv.cnn.com, DNS:dev.cnnmoney.ch, DNS:dev.content.cnnmoney.ch, DNS:dev.hypatia.api.cnn.io, DNS:dev.money.cnn.com, DNS:edition-m.cnn.com, DNS:eightiesyourself.cnn.com, DNS:graphql.verticals.api.cnn.io, DNS:hypatia.api.cnn.io, DNS:i.cdn.travel.cnn.com, DNS:lite.cnn.com, DNS:markets.money.cnn.io, DNS:money.cnn.com, DNS:preview.dev.money.cnn.com, DNS:preview.money.cnn.com, DNS:preview.qa.money.cnn.com, DNS:preview.ref.money.cnn.com, DNS:preview.train.money.cnn.com, DNS:preview2.ref.money.cnn.com, DNS:qa.money.cnn.com, DNS:ref.admin.cnnmoney.ch, DNS:ref.cnnmoney.ch, DNS:ref.content.cnnmoney.ch, DNS:ref.hypatia.api.cnn.io, DNS:ref.money.cnn.com, DNS:ref2.money.cnn.com, DNS:stage.cnnmoney.ch, DNS:stage.content.cnnmoney.ch, DNS:stage.edition-m.cnn.com, DNS:stage.money.cnn.com, DNS:stage.us-m.cnn.com, DNS:stage.www-m.cnn.com, DNS:train.money.cnn.com, DNS:us-m.cnn.com, DNS:www-m.cnn.com, DNS:www.cnnmoney.ch
+| Issuer: commonName=GlobalSign CloudSSL CA - SHA256 - G3/organizationName=GlobalSign nv-sa/countryName=BE
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-07-09T18:59:13
+| Not valid after:  2019-04-14T16:30:54
+| MD5:   39f0 d78a a948 b418 add0 1d8a f9b2 52e8
+|_SHA-1: bb11 615e cb3c 0995 57a1 c3bc 222b 868d 5aea 1622
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.4 (91%), Crestron XPanel control system (90%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (90%), Linux 3.2 - 4.9 (88%), OpenWrt 0.9 - 7.09 (Linux 2.4.30 - 2.4.34) (88%), OpenWrt White Russian 0.9 (Linux 2.4.30) (88%), Asus RT-AC66U router (Linux 2.6) (87%), Asus RT-N10 router or AXIS 211A Network Camera (Linux 2.6) (87%), Linux 2.6.18 (87%), Asus RT-N16 WAP (Linux 2.6) (87%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.000 days (since Wed Jul 11 14:02:33 2018)
+Network Distance: 7 hops
+TCP Sequence Prediction: Difficulty=254 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   1.53 ms   tbrouter-nish.ttt (10.20.1.1)
+2   3.71 ms   hst-224-1.medicom.bg (84.238.224.1)
+3   4.02 ms   46.55.255.250.ipacct.net (46.55.255.250)
+4   11.43 ms  212.3.236.97
+5   154.46 ms ae-2-3209.edge3.frankfurt1.level3.net (4.69.163.102)
+6   146.29 ms 172.18.176.1
+7   42.10 ms  151.101.65.67
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:02
+Completed NSE at 14:02, 0.00s elapsed
+Initiating NSE at 14:02
+Completed NSE at 14:02, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 37.58 seconds
+           Raw packets sent: 2094 (95.772KB) | Rcvd: 48 (2.972KB)
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-07-11 14:05 EDT
+NSE: Loaded 148 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:05
+Completed NSE at 14:05, 0.00s elapsed
+Initiating NSE at 14:05
+Completed NSE at 14:05, 0.00s elapsed
+Initiating Ping Scan at 14:05
+Scanning cnn.com (151.101.193.67) [4 ports]
+Completed Ping Scan at 14:05, 0.26s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:05
+Completed Parallel DNS resolution of 1 host. at 14:05, 0.29s elapsed
+Initiating SYN Stealth Scan at 14:05
+Scanning cnn.com (151.101.193.67) [1000 ports]
+Discovered open port 443/tcp on 151.101.193.67
+Discovered open port 80/tcp on 151.101.193.67
+Completed SYN Stealth Scan at 14:05, 17.54s elapsed (1000 total ports)
+Initiating Service scan at 14:05
+Scanning 2 services on cnn.com (151.101.193.67)
+Completed Service scan at 14:05, 14.35s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against cnn.com (151.101.193.67)
+Retrying OS detection (try #2) against cnn.com (151.101.193.67)
+Initiating Traceroute at 14:05
+Completed Traceroute at 14:05, 1.07s elapsed
+Initiating Parallel DNS resolution of 7 hosts. at 14:05
+Completed Parallel DNS resolution of 7 hosts. at 14:05, 0.01s elapsed
+NSE: Script scanning 151.101.193.67.
+Initiating NSE at 14:05
+Completed NSE at 14:05, 7.80s elapsed
+Initiating NSE at 14:05
+Completed NSE at 14:05, 0.00s elapsed
+Nmap scan report for cnn.com (151.101.193.67)
+Host is up (0.053s latency).
+Other addresses for cnn.com (not scanned): 151.101.1.67 151.101.65.67 151.101.129.67 2a04:4e42::323 2a04:4e42:600::323 2a04:4e42:400::323 2a04:4e42:200::323
+Not shown: 998 filtered ports
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     Varnish
+| http-methods: 
+|_  Supported Methods: GET OPTIONS
+|_http-server-header: Varnish
+|_http-title: Did not follow redirect to http://www.cnn.com/
+443/tcp open  ssl/http-proxy Varnish
+| http-methods: 
+|_  Supported Methods: HEAD POST
+|_http-server-header: Varnish
+|_http-title: Did not follow redirect to https://www.cnn.com/
+| ssl-cert: Subject: commonName=turner-tls.map.fastly.net/organizationName=Fastly, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:turner-tls.map.fastly.net, DNS:*.api.cnn.com, DNS:*.api.cnn.io, DNS:*.api.electiontracker.cnn.com, DNS:*.api.platform.cnn.com, DNS:*.arabic.cnn.com, DNS:*.artemis.turner.com, DNS:*.beta.next.cnn.com, DNS:*.blogs.cnn.com, DNS:*.client.appletv.cnn.com, DNS:*.cnn.com, DNS:*.cnn.io, DNS:*.cnnlabs.com, DNS:*.cnnmoney.com, DNS:*.cnnmoneystream.com, DNS:*.cnnv2.com, DNS:*.config.outturner.com, DNS:*.corporatemobile.outturner.com, DNS:*.data.api.cnn.io, DNS:*.edition.cnn.com, DNS:*.edition.i.cdn.cnn.com, DNS:*.electiontracker.cnn.com, DNS:*.go.cnn.com, DNS:*.greatbig.com, DNS:*.greatbigstory.com, DNS:*.greatbigstory.se, DNS:*.i.cdn.cnn.com, DNS:*.markets.money.cnn.io, DNS:*.money.cnn.com, DNS:*.moneystream.cnn.com, DNS:*.next.cnn.com, DNS:*.odm.platform.cnn.com, DNS:*.outturner.com, DNS:*.platform.cnn.com, DNS:*.section-content.money.cnn.com, DNS:*.stage.next.cnn.com, DNS:*.travel.cnn.com, DNS:*.turner.com, DNS:*.www.i.cdn.cnn.com, DNS:admin.cnnmoney.ch, DNS:api.electiontracker.cnn.com, DNS:api.etp.cnn.com, DNS:api.platform.cnn.com, DNS:app.cnn.io, DNS:arabic.cnn.com, DNS:client.appletv.cnn.com, DNS:cnn.com, DNS:cnn.io, DNS:cnnlabs.com, DNS:cnnmoney.ch, DNS:cnnmoney.com, DNS:compositor.api.cnn.com, DNS:content.cnnmoney.ch, DNS:dev.admin.cnnmoney.ch, DNS:dev.client.appletv.cnn.com, DNS:dev.cnnmoney.ch, DNS:dev.content.cnnmoney.ch, DNS:dev.hypatia.api.cnn.io, DNS:dev.money.cnn.com, DNS:edition-m.cnn.com, DNS:eightiesyourself.cnn.com, DNS:graphql.verticals.api.cnn.io, DNS:hypatia.api.cnn.io, DNS:i.cdn.travel.cnn.com, DNS:lite.cnn.com, DNS:markets.money.cnn.io, DNS:money.cnn.com, DNS:preview.dev.money.cnn.com, DNS:preview.money.cnn.com, DNS:preview.qa.money.cnn.com, DNS:preview.ref.money.cnn.com, DNS:preview.train.money.cnn.com, DNS:preview2.ref.money.cnn.com, DNS:qa.money.cnn.com, DNS:ref.admin.cnnmoney.ch, DNS:ref.cnnmoney.ch, DNS:ref.content.cnnmoney.ch, DNS:ref.hypatia.api.cnn.io, DNS:ref.money.cnn.com, DNS:ref2.money.cnn.com, DNS:stage.cnnmoney.ch, DNS:stage.content.cnnmoney.ch, DNS:stage.edition-m.cnn.com, DNS:stage.money.cnn.com, DNS:stage.us-m.cnn.com, DNS:stage.www-m.cnn.com, DNS:train.money.cnn.com, DNS:us-m.cnn.com, DNS:www-m.cnn.com, DNS:www.cnnmoney.ch
+| Issuer: commonName=GlobalSign CloudSSL CA - SHA256 - G3/organizationName=GlobalSign nv-sa/countryName=BE
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-07-09T18:59:13
+| Not valid after:  2019-04-14T16:30:54
+| MD5:   39f0 d78a a948 b418 add0 1d8a f9b2 52e8
+|_SHA-1: bb11 615e cb3c 0995 57a1 c3bc 222b 868d 5aea 1622
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.4 (92%), Crestron XPanel control system (90%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (90%), Linux 3.2 - 4.9 (88%), OpenWrt 0.9 - 7.09 (Linux 2.4.30 - 2.4.34) (88%), OpenWrt White Russian 0.9 (Linux 2.4.30) (88%), Asus RT-AC66U router (Linux 2.6) (87%), Asus RT-N10 router or AXIS 211A Network Camera (Linux 2.6) (87%), Linux 2.6.18 (87%), Asus RT-N16 WAP (Linux 2.6) (87%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.000 days (since Wed Jul 11 14:05:48 2018)
+Network Distance: 7 hops
+TCP Sequence Prediction: Difficulty=256 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   4.56 ms  tbrouter-nish.ttt (10.20.1.1)
+2   3.37 ms  hst-224-1.medicom.bg (84.238.224.1)
+3   7.84 ms  46.55.255.250.ipacct.net (46.55.255.250)
+4   5.36 ms  212.3.236.97
+5   55.79 ms ae-2-3209.edge3.frankfurt1.level3.net (4.69.163.102)
+6   40.29 ms 172.18.176.1
+7   43.44 ms 151.101.193.67
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:05
+Completed NSE at 14:05, 0.00s elapsed
+Initiating NSE at 14:05
+Completed NSE at 14:05, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 47.38 seconds
+           Raw packets sent: 2101 (96.238KB) | Rcvd: 57 (3.408KB)
+Discovered open port 443/tcp
+Discovered open port 80/tcp
+Not shown: 998 filtered ports
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-07-11 14:09 EDT
+NSE: Loaded 148 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:09
+Completed NSE at 14:09, 0.00s elapsed
+Initiating NSE at 14:09
+Completed NSE at 14:09, 0.00s elapsed
+Initiating Ping Scan at 14:09
+Scanning cnn.com (151.101.193.67) [4 ports]
+Completed Ping Scan at 14:09, 0.20s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:09
+Completed Parallel DNS resolution of 1 host. at 14:09, 0.00s elapsed
+Initiating SYN Stealth Scan at 14:09
+Scanning cnn.com (151.101.193.67) [1000 ports]
+Discovered open port 80/tcp on 151.101.193.67
+Discovered open port 443/tcp on 151.101.193.67
+Completed SYN Stealth Scan at 14:09, 14.80s elapsed (1000 total ports)
+Initiating Service scan at 14:09
+Scanning 2 services on cnn.com (151.101.193.67)
+Completed Service scan at 14:09, 12.48s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against cnn.com (151.101.193.67)
+Retrying OS detection (try #2) against cnn.com (151.101.193.67)
+Initiating Traceroute at 14:10
+Completed Traceroute at 14:10, 0.05s elapsed
+Initiating Parallel DNS resolution of 7 hosts. at 14:10
+Completed Parallel DNS resolution of 7 hosts. at 14:10, 0.02s elapsed
+NSE: Script scanning 151.101.193.67.
+Initiating NSE at 14:10
+Completed NSE at 14:10, 7.14s elapsed
+Initiating NSE at 14:10
+Completed NSE at 14:10, 0.00s elapsed
+Nmap scan report for cnn.com (151.101.193.67)
+Host is up (0.078s latency).
+Other addresses for cnn.com (not scanned): 151.101.129.67 151.101.1.67 151.101.65.67 2a04:4e42:200::323 2a04:4e42:400::323 2a04:4e42:600::323 2a04:4e42::323
+Not shown: 998 filtered ports
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     Varnish
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS
+|_http-server-header: Varnish
+|_http-title: Did not follow redirect to http://www.cnn.com/
+443/tcp open  ssl/http-proxy Varnish
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS
+|_http-server-header: Varnish
+|_http-title: Did not follow redirect to https://www.cnn.com/
+| ssl-cert: Subject: commonName=turner-tls.map.fastly.net/organizationName=Fastly, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:turner-tls.map.fastly.net, DNS:*.api.cnn.com, DNS:*.api.cnn.io, DNS:*.api.electiontracker.cnn.com, DNS:*.api.platform.cnn.com, DNS:*.arabic.cnn.com, DNS:*.artemis.turner.com, DNS:*.beta.next.cnn.com, DNS:*.blogs.cnn.com, DNS:*.client.appletv.cnn.com, DNS:*.cnn.com, DNS:*.cnn.io, DNS:*.cnnlabs.com, DNS:*.cnnmoney.com, DNS:*.cnnmoneystream.com, DNS:*.cnnv2.com, DNS:*.config.outturner.com, DNS:*.corporatemobile.outturner.com, DNS:*.data.api.cnn.io, DNS:*.edition.cnn.com, DNS:*.edition.i.cdn.cnn.com, DNS:*.electiontracker.cnn.com, DNS:*.go.cnn.com, DNS:*.greatbig.com, DNS:*.greatbigstory.com, DNS:*.greatbigstory.se, DNS:*.i.cdn.cnn.com, DNS:*.markets.money.cnn.io, DNS:*.money.cnn.com, DNS:*.moneystream.cnn.com, DNS:*.next.cnn.com, DNS:*.odm.platform.cnn.com, DNS:*.outturner.com, DNS:*.platform.cnn.com, DNS:*.section-content.money.cnn.com, DNS:*.stage.next.cnn.com, DNS:*.travel.cnn.com, DNS:*.turner.com, DNS:*.www.i.cdn.cnn.com, DNS:admin.cnnmoney.ch, DNS:api.electiontracker.cnn.com, DNS:api.etp.cnn.com, DNS:api.platform.cnn.com, DNS:app.cnn.io, DNS:arabic.cnn.com, DNS:client.appletv.cnn.com, DNS:cnn.com, DNS:cnn.io, DNS:cnnlabs.com, DNS:cnnmoney.ch, DNS:cnnmoney.com, DNS:compositor.api.cnn.com, DNS:content.cnnmoney.ch, DNS:dev.admin.cnnmoney.ch, DNS:dev.client.appletv.cnn.com, DNS:dev.cnnmoney.ch, DNS:dev.content.cnnmoney.ch, DNS:dev.hypatia.api.cnn.io, DNS:dev.money.cnn.com, DNS:edition-m.cnn.com, DNS:eightiesyourself.cnn.com, DNS:graphql.verticals.api.cnn.io, DNS:hypatia.api.cnn.io, DNS:i.cdn.travel.cnn.com, DNS:lite.cnn.com, DNS:markets.money.cnn.io, DNS:money.cnn.com, DNS:preview.dev.money.cnn.com, DNS:preview.money.cnn.com, DNS:preview.qa.money.cnn.com, DNS:preview.ref.money.cnn.com, DNS:preview.train.money.cnn.com, DNS:preview2.ref.money.cnn.com, DNS:qa.money.cnn.com, DNS:ref.admin.cnnmoney.ch, DNS:ref.cnnmoney.ch, DNS:ref.content.cnnmoney.ch, DNS:ref.hypatia.api.cnn.io, DNS:ref.money.cnn.com, DNS:ref2.money.cnn.com, DNS:stage.cnnmoney.ch, DNS:stage.content.cnnmoney.ch, DNS:stage.edition-m.cnn.com, DNS:stage.money.cnn.com, DNS:stage.us-m.cnn.com, DNS:stage.www-m.cnn.com, DNS:train.money.cnn.com, DNS:us-m.cnn.com, DNS:www-m.cnn.com, DNS:www.cnnmoney.ch
+| Issuer: commonName=GlobalSign CloudSSL CA - SHA256 - G3/organizationName=GlobalSign nv-sa/countryName=BE
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-07-09T18:59:13
+| Not valid after:  2019-04-14T16:30:54
+| MD5:   39f0 d78a a948 b418 add0 1d8a f9b2 52e8
+|_SHA-1: bb11 615e cb3c 0995 57a1 c3bc 222b 868d 5aea 1622
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.4 (92%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (91%), Crestron XPanel control system (90%), Linux 3.2 - 4.9 (88%), OpenWrt 0.9 - 7.09 (Linux 2.4.30 - 2.4.34) (88%), OpenWrt White Russian 0.9 (Linux 2.4.30) (88%), Asus RT-AC66U router (Linux 2.6) (87%), Asus RT-N10 router or AXIS 211A Network Camera (Linux 2.6) (87%), Linux 2.6.18 (87%), Asus RT-N16 WAP (Linux 2.6) (87%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.000 days (since Wed Jul 11 14:09:55 2018)
+Network Distance: 7 hops
+TCP Sequence Prediction: Difficulty=256 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   32.10 ms tbrouter-nish.ttt (10.20.1.1)
+2   31.99 ms hst-224-1.medicom.bg (84.238.224.1)
+3   2.46 ms  46.55.255.250.ipacct.net (46.55.255.250)
+4   4.11 ms  212.3.236.97
+5   45.38 ms ae-2-3209.edge3.frankfurt1.level3.net (4.69.163.102)
+6   39.37 ms 172.18.176.1
+7   38.50 ms 151.101.193.67
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:10
+Completed NSE at 14:10, 0.00s elapsed
+Initiating NSE at 14:10
+Completed NSE at 14:10, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 42.23 seconds
+           Raw packets sent: 2092 (95.660KB) | Rcvd: 43 (2.704KB)
+Discovered open port 443/tcp
+Discovered open port 80/tcp
+Not shown: 998 filtered ports
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-07-11 14:16 EDT
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.10 seconds
+           Raw packets sent: 0 (0B) | Rcvd: 0 (0B)
+Discovered open port 80/tcp on 151.101.193.67
+Discovered open port 443/tcp on 151.101.193.67
+80/tcp  open  http-proxy     Varnish
+443/tcp open  ssl/http-proxy Varnish
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Not shown: 998 filtered ports
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-07-11 14:53 EDT
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.05 seconds
+           Raw packets sent: 0 (0B) | Rcvd: 0 (0B)
+Discovered open port 80/tcp on 151.101.193.67
+Discovered open port 443/tcp on 151.101.193.67
+80/tcp  open  http-proxy     Varnish
+443/tcp open  ssl/http-proxy Varnish
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Not shown: 998 filtered ports
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-07-11 14:55 EDT
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.05 seconds
+           Raw packets sent: 0 (0B) | Rcvd: 0 (0B)
+Discovered open port 80/tcp on 151.101.193.67
+Discovered open port 443/tcp on 151.101.193.67
+80/tcp  open  http-proxy     Varnish
+443/tcp open  ssl/http-proxy Varnish
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Not shown: 998 filtered ports
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-07-11 15:47 EDT
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.05 seconds
+           Raw packets sent: 0 (0B) | Rcvd: 0 (0B)
+Discovered open port 80/tcp on 151.101.193.67
+Discovered open port 443/tcp on 151.101.193.67
+80/tcp  open  http-proxy     Varnish
+443/tcp open  ssl/http-proxy Varnish
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Not shown: 998 filtered ports
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-07-11 15:55 EDT
+NSE: Loaded 148 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:55
+Completed NSE at 15:55, 0.00s elapsed
+Initiating NSE at 15:55
+Completed NSE at 15:55, 0.00s elapsed
+Initiating Ping Scan at 15:55
+Scanning cnn.com (151.101.129.67) [4 ports]
+Completed Ping Scan at 15:55, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:55
+Completed Parallel DNS resolution of 1 host. at 15:55, 0.11s elapsed
+Initiating SYN Stealth Scan at 15:55
+Scanning cnn.com (151.101.129.67) [1000 ports]
+Discovered open port 443/tcp on 151.101.129.67
+Discovered open port 80/tcp on 151.101.129.67
+Completed SYN Stealth Scan at 15:55, 9.71s elapsed (1000 total ports)
+Initiating Service scan at 15:55
+Scanning 2 services on cnn.com (151.101.129.67)
+Completed Service scan at 15:55, 12.33s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against cnn.com (151.101.129.67)
+Retrying OS detection (try #2) against cnn.com (151.101.129.67)
+Initiating Traceroute at 15:56
+Completed Traceroute at 15:56, 1.37s elapsed
+Initiating Parallel DNS resolution of 7 hosts. at 15:56
+Completed Parallel DNS resolution of 7 hosts. at 15:56, 13.00s elapsed
+NSE: Script scanning 151.101.129.67.
+Initiating NSE at 15:56
+Completed NSE at 15:56, 4.56s elapsed
+Initiating NSE at 15:56
+Completed NSE at 15:56, 0.00s elapsed
+Nmap scan report for cnn.com (151.101.129.67)
+Host is up (0.093s latency).
+Other addresses for cnn.com (not scanned): 151.101.193.67 151.101.65.67 151.101.1.67 2a04:4e42:400::323 2a04:4e42:600::323 2a04:4e42:200::323 2a04:4e42::323
+Not shown: 998 filtered ports
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     Varnish
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Varnish
+|_http-title: Did not follow redirect to http://www.cnn.com/
+443/tcp open  ssl/http-proxy Varnish
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Varnish
+|_http-title: Did not follow redirect to https://www.cnn.com/
+| ssl-cert: Subject: commonName=turner-tls.map.fastly.net/organizationName=Fastly, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:turner-tls.map.fastly.net, DNS:*.api.cnn.com, DNS:*.api.cnn.io, DNS:*.api.electiontracker.cnn.com, DNS:*.api.platform.cnn.com, DNS:*.arabic.cnn.com, DNS:*.artemis.turner.com, DNS:*.beta.next.cnn.com, DNS:*.blogs.cnn.com, DNS:*.client.appletv.cnn.com, DNS:*.cnn.com, DNS:*.cnn.io, DNS:*.cnnlabs.com, DNS:*.cnnmoney.com, DNS:*.cnnmoneystream.com, DNS:*.cnnv2.com, DNS:*.config.outturner.com, DNS:*.corporatemobile.outturner.com, DNS:*.data.api.cnn.io, DNS:*.edition.cnn.com, DNS:*.edition.i.cdn.cnn.com, DNS:*.electiontracker.cnn.com, DNS:*.go.cnn.com, DNS:*.greatbig.com, DNS:*.greatbigstory.com, DNS:*.greatbigstory.se, DNS:*.i.cdn.cnn.com, DNS:*.markets.money.cnn.io, DNS:*.money.cnn.com, DNS:*.moneystream.cnn.com, DNS:*.next.cnn.com, DNS:*.odm.platform.cnn.com, DNS:*.outturner.com, DNS:*.platform.cnn.com, DNS:*.section-content.money.cnn.com, DNS:*.stage.next.cnn.com, DNS:*.travel.cnn.com, DNS:*.turner.com, DNS:*.www.i.cdn.cnn.com, DNS:admin.cnnmoney.ch, DNS:api.electiontracker.cnn.com, DNS:api.etp.cnn.com, DNS:api.platform.cnn.com, DNS:app.cnn.io, DNS:arabic.cnn.com, DNS:client.appletv.cnn.com, DNS:cnn.com, DNS:cnn.io, DNS:cnnlabs.com, DNS:cnnmoney.ch, DNS:cnnmoney.com, DNS:compositor.api.cnn.com, DNS:content.cnnmoney.ch, DNS:dev.admin.cnnmoney.ch, DNS:dev.client.appletv.cnn.com, DNS:dev.cnnmoney.ch, DNS:dev.content.cnnmoney.ch, DNS:dev.hypatia.api.cnn.io, DNS:dev.money.cnn.com, DNS:edition-m.cnn.com, DNS:eightiesyourself.cnn.com, DNS:graphql.verticals.api.cnn.io, DNS:hypatia.api.cnn.io, DNS:i.cdn.travel.cnn.com, DNS:lite.cnn.com, DNS:markets.money.cnn.io, DNS:money.cnn.com, DNS:preview.dev.money.cnn.com, DNS:preview.money.cnn.com, DNS:preview.qa.money.cnn.com, DNS:preview.ref.money.cnn.com, DNS:preview.train.money.cnn.com, DNS:preview2.ref.money.cnn.com, DNS:qa.money.cnn.com, DNS:ref.admin.cnnmoney.ch, DNS:ref.cnnmoney.ch, DNS:ref.content.cnnmoney.ch, DNS:ref.hypatia.api.cnn.io, DNS:ref.money.cnn.com, DNS:ref2.money.cnn.com, DNS:stage.cnnmoney.ch, DNS:stage.content.cnnmoney.ch, DNS:stage.edition-m.cnn.com, DNS:stage.money.cnn.com, DNS:stage.us-m.cnn.com, DNS:stage.www-m.cnn.com, DNS:train.money.cnn.com, DNS:us-m.cnn.com, DNS:www-m.cnn.com, DNS:www.cnnmoney.ch
+| Issuer: commonName=GlobalSign CloudSSL CA - SHA256 - G3/organizationName=GlobalSign nv-sa/countryName=BE
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-07-09T18:59:13
+| Not valid after:  2019-04-14T16:30:54
+| MD5:   39f0 d78a a948 b418 add0 1d8a f9b2 52e8
+|_SHA-1: bb11 615e cb3c 0995 57a1 c3bc 222b 868d 5aea 1622
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.4 (92%), Crestron XPanel control system (90%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (90%), Linux 3.2 - 4.9 (88%), OpenWrt 0.9 - 7.09 (Linux 2.4.30 - 2.4.34) (88%), OpenWrt White Russian 0.9 (Linux 2.4.30) (88%), Asus RT-AC66U router (Linux 2.6) (87%), Asus RT-N10 router or AXIS 211A Network Camera (Linux 2.6) (87%), Linux 2.6.18 (87%), Asus RT-N16 WAP (Linux 2.6) (87%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.000 days (since Wed Jul 11 15:55:54 2018)
+Network Distance: 7 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   192.23 ms tbrouter-nish.ttt (10.20.1.1)
+2   360.51 ms 84.238.224.1
+3   284.44 ms 46.55.255.249
+4   153.32 ms 212.3.236.97
+5   154.19 ms 4.69.163.102
+6   225.49 ms 172.18.176.1
+7   130.11 ms 151.101.129.67
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:56
+Completed NSE at 15:56, 0.00s elapsed
+Initiating NSE at 15:56
+Completed NSE at 15:56, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 51.62 seconds
+           Raw packets sent: 2111 (97.146KB) | Rcvd: 101 (8.726KB)
+Discovered open port 443/tcp
+Discovered open port 80/tcp
+Not shown: 998 filtered ports

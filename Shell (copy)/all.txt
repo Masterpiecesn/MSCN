@@ -1,0 +1,767 @@
+[1m
+###########################################################
+    testssl.sh       3.0beta from [m[1mhttps://testssl.sh/dev/[m
+[1m    ([m[1;30mfad07c3 2018-07-05 18:55:15 -- [m[1m)[m
+[1m
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ [m[1mhttps://testssl.sh/bugs/[m
+[1m
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2i-dev)" [~183 ciphers]
+ on Mscn:./testssl.sh/bin/openssl.Linux.x86_64
+ (built: "Jun 22 19:32:29 2016", platform: "linux-x86_64")
+
+
+[1mTesting all IPv4 addresses (port 443): [m151.101.1.67 151.101.193.67 151.101.65.67 151.101.129.67
+-----------------------------------------------------
+[7m Start 2018-07-11 14:02:44        -->> 151.101.1.67:443 (cnn.com) <<--[m
+
+ Further IP addresses:   151.101.65.67 151.101.129.67 151.101.193.67
+                         2a04:4e42:400::323 2a04:4e42:200::323 2a04:4e42::323
+                         2a04:4e42:600::323 
+ rDNS (151.101.1.67):    --
+
+[1m
+###########################################################
+    testssl.sh       3.0beta from [m[1mhttps://testssl.sh/dev/[m
+[1m    ([m[1;30mfad07c3 2018-07-05 18:55:15 -- [m[1m)[m
+[1m
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ [m[1mhttps://testssl.sh/bugs/[m
+[1m
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2i-dev)" [~183 ciphers]
+ on Mscn:./testssl.sh/bin/openssl.Linux.x86_64
+ (built: "Jun 22 19:32:29 2016", platform: "linux-x86_64")
+
+
+[1mTesting all IPv4 addresses (port 443): [m151.101.65.67 151.101.1.67 151.101.193.67 151.101.129.67
+-----------------------------------------------------
+[7m Start 2018-07-11 14:06:02        -->> 151.101.65.67:443 (cnn.com) <<--[m
+
+ Further IP addresses:   151.101.129.67 151.101.193.67 151.101.1.67
+                         2a04:4e42:200::323 2a04:4e42::323 2a04:4e42:600::323
+                         2a04:4e42:400::323 
+ rDNS (151.101.65.67):   --
+ Service detected:       HTTP
+
+
+[1m[4m Testing protocols [m[4mvia sockets except NPN+ALPN [m
+
+[1m SSLv2      [m[1;32mnot offered (OK)[m
+[1m SSLv3      [m[1;32mnot offered (OK)[m
+[1m TLS 1      [moffered
+[1m TLS 1.1    [moffered
+[1m TLS 1.2    [m[1;32moffered (OK)[m
+[1m TLS 1.3    [mnot offered
+[1m NPN/SPDY   [mnot offered
+[1m ALPN/HTTP2 [m[0;32mh2[m, http/1.1 (offered)
+
+[1m[4m Testing cipher categories [m
+
+[1m NULL ciphers (no encryption)                  [m[1;32mnot offered (OK)[m
+[1m Anonymous NULL Ciphers (no authentication)    [m[1;32mnot offered (OK)[m
+[1m Export ciphers (w/o ADH+NULL)                 [m[1;32mnot offered (OK)[m
+[1m LOW: 64 Bit + DES encryption (w/o export)     [m[1;32mnot offered (OK)[m
+[1m Weak 128 Bit ciphers (SEED, IDEA, RC[2,4])    [m[0;32mnot offered (OK)[m
+[1m Triple DES Ciphers (Medium)                   [m[0;33moffered[m
+[1m High encryption (AES+Camellia, no AEAD)       [m[0;32moffered (OK)[m
+[1m Strong encryption (AEAD ciphers)              [m[1;32moffered (OK)[m
+
+
+[1m[4m Testing robust (perfect) forward secrecy[m[4m, (P)FS -- omitting Null Authentication/Encryption, 3DES, RC4 [m
+
+[0;32m PFS is offered (OK)[m          ECDHE-RSA-AES256-GCM-SHA384
+                              ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA
+                              ECDHE-RSA-AES128-GCM-SHA256
+                              ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA 
+[1m Elliptic curves offered:     [m[0;32mprime256v1[m [0;32msecp384r1[m [0;32msecp521r1[m [0;32mX25519[m 
+
+
+[1m[4m Testing server preferences [m
+
+[1m Has server cipher order?     [m[1;32myes (OK)[m
+[1m Negotiated protocol          [m[1;32mTLSv1.2[m
+[1m Negotiated cipher            [m[1;32mECDHE-RSA-AES128-GCM-SHA256[m, [0;32m256 bit ECDH (P-256)[m
+[1m Cipher order[m
+    TLSv1:     ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA
+               DES-CBC3-SHA 
+    TLSv1.1:   ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA
+               DES-CBC3-SHA 
+    TLSv1.2:   ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384
+               ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES256-SHA384
+               ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-GCM-SHA256
+               AES128-SHA AES256-SHA DES-CBC3-SHA 
+
+
+[1m[4m Testing server defaults (Server Hello) [m
+
+[1m TLS extensions (standard)    [m"renegotiation info/#65281" "server name/#0"
+                              "EC point formats/#11" "session ticket/#35"
+                              "status request/#5" "encrypt-then-mac/#22"
+                              "extended master secret/#23"
+                              "application layer protocol negotiation/#16"
+[1m Session Ticket RFC 5077 hint [m7200 seconds, session tickets keys seems to be rotated < daily
+[1m SSL Session ID support       [myes
+[1m Session Resumption           [mTickets: yes, ID: yes
+[1m TLS clock skew[m               Random values, no fingerprinting possible 
+[1m Signature Algorithm          [m[0;32mSHA256 with RSA[m
+[1m Server key size              [mRSA 2048 bits
+[1m Server key usage             [mDigital Signature, Key Encipherment
+[1m Server extended key usage    [mTLS Web Server Authentication, TLS Web Client Authentication
+[1m Serial / Fingerprints        [m118B21B41454C804E81375F1 / SHA1 BB11615ECB3C099557A1C3BC222B868D5AEA1622
+                              SHA256 5ACAD89F14FCF28645FA0D4B953A6258DB255034792A9FFB8E6DD12AED9A34B6
+[1m Common Name (CN)             [m[3mturner-tls.map.fastly.net[m
+[1m subjectAltName (SAN)         [m[3mturner-tls.map.fastly.net *.api.cnn.com
+                              *.api.cnn.io *.api.electiontracker.cnn.com
+                              *.api.platform.cnn.com *.arabic.cnn.com
+                              *.artemis.turner.com *.beta.next.cnn.com
+                              *.blogs.cnn.com *.client.appletv.cnn.com
+                              *.cnn.com *.cnn.io *.cnnlabs.com *.cnnmoney.com
+                              *.cnnmoneystream.com *.cnnv2.com
+                              *.config.outturner.com
+                              *.corporatemobile.outturner.com *.data.api.cnn.io
+                              *.edition.cnn.com *.edition.i.cdn.cnn.com
+                              *.electiontracker.cnn.com *.go.cnn.com
+                              *.greatbig.com *.greatbigstory.com
+                              *.greatbigstory.se *.i.cdn.cnn.com
+                              *.markets.money.cnn.io *.money.cnn.com
+                              *.moneystream.cnn.com *.next.cnn.com
+                              *.odm.platform.cnn.com *.outturner.com
+                              *.platform.cnn.com
+                              *.section-content.money.cnn.com
+                              *.stage.next.cnn.com *.travel.cnn.com
+                              *.turner.com *.www.i.cdn.cnn.com
+                              admin.cnnmoney.ch api.electiontracker.cnn.com
+                              api.etp.cnn.com api.platform.cnn.com app.cnn.io
+                              arabic.cnn.com client.appletv.cnn.com cnn.com
+                              cnn.io cnnlabs.com cnnmoney.ch cnnmoney.com
+                              compositor.api.cnn.com content.cnnmoney.ch
+                              dev.admin.cnnmoney.ch dev.client.appletv.cnn.com
+                              dev.cnnmoney.ch dev.content.cnnmoney.ch
+                              dev.hypatia.api.cnn.io dev.money.cnn.com
+                              edition-m.cnn.com eightiesyourself.cnn.com
+                              graphql.verticals.api.cnn.io hypatia.api.cnn.io
+                              i.cdn.travel.cnn.com lite.cnn.com
+                              markets.money.cnn.io money.cnn.com
+                              preview.dev.money.cnn.com preview.money.cnn.com
+                              preview.qa.money.cnn.com
+                              preview.ref.money.cnn.com
+                              preview.train.money.cnn.com
+                              preview2.ref.money.cnn.com qa.money.cnn.com
+                              ref.admin.cnnmoney.ch ref.cnnmoney.ch
+                              ref.content.cnnmoney.ch ref.hypatia.api.cnn.io
+                              ref.money.cnn.com ref2.money.cnn.com
+                              stage.cnnmoney.ch stage.content.cnnmoney.ch
+                              stage.edition-m.cnn.com stage.money.cnn.com
+                              stage.us-m.cnn.com stage.www-m.cnn.com
+                              train.money.cnn.com us-m.cnn.com www-m.cnn.com
+                              www.cnnmoney.ch [m
+[1m Issuer                       [m[3mGlobalSign CloudSSL CA - SHA256 - G3[m ([3mGlobalSign nv-sa[m from [3mBE[m)
+[1m Trust (hostname)             [m[0;32mOk via SAN[m (same w/o SNI)
+[1m Chain of trust[m               [0;32mOk   [m[0;35m[m
+[1m EV cert[m (experimental)       no 
+[1m Certificate Validity (UTC)   [m[0;32m276 >= 60 days[m (2018-07-09 14:59 --> 2019-04-14 12:30)
+[1m # of certificates provided[m   2
+[1m Certificate Revocation List  [m--
+[1m OCSP URI                     [mhttp://ocsp2.globalsign.com/cloudsslsha2g3
+[1m OCSP stapling                [m[0;32moffered[m, [0;32mnot revoked[m
+[1m OCSP must staple extension   [m--
+[1m DNS CAA RR[m (experimental)    [1;33mnot offered[m
+[1m Certificate Transparency     [m[0;32myes[m (certificate extension)
+
+
+[1m[4m Testing HTTP header response @ "/" [m
+
+[1m HTTP Status Code           [m  301 Moved Permanently, redirecting to "https://www.cnn.com/"
+[1m HTTP clock skew              [m-25146 sec from localtime
+[1m Strict Transport Security    [m[1;33mnot offered[m
+[1m Public Key Pinning           [m--
+[1m Server banner                [mVarnish
+[1m Application banner           [m--
+[1m Cookie(s)                    [m2 issued: [0;33mNONE[m secure, [0;33mNONE[m HttpOnly -- maybe better try target URL of 30x
+[1m Security headers             [m[0;36mX-Served-By[m cache-hhn1524-HHN
+[1m Reverse Proxy banner         [m[33m[1mVia(B[m: [33m1(B[m.[33m1(B[m varnish
+                              [33m[1mX-Cache(B[m: HIT
+                              [33m[1mX-Cache(B[m-Hits: [33m0(B[m
+
+
+[1m[4m Testing vulnerabilities [m
+
+[1m Heartbleed[m (CVE-2014-0160)                [1;32mnot vulnerable (OK)[m, no heartbeat extension
+[1m CCS[m (CVE-2014-0224)                       [1;32mnot vulnerable (OK)[m
+[1m Ticketbleed[m (CVE-2016-9244), experiment.  [1;32mnot vulnerable (OK)[m
+[1m ROBOT                                     [m
+[1m
+###########################################################
+    testssl.sh       3.0beta from [m[1mhttps://testssl.sh/dev/[m
+[1m    ([m[1;30mfad07c3 2018-07-05 18:55:15 -- [m[1m)[m
+[1m
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ [m[1mhttps://testssl.sh/bugs/[m
+[1m
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2i-dev)" [~183 ciphers]
+ on Mscn:./testssl.sh/bin/openssl.Linux.x86_64
+ (built: "Jun 22 19:32:29 2016", platform: "linux-x86_64")
+
+
+[1mTesting all IPv4 addresses (port 443): [m151.101.129.67 151.101.1.67 151.101.65.67 151.101.193.67
+----------------------------------------------------------------------------------------------------
+[7m Start 2018-07-11 14:10:11        -->> 151.101.129.67:443 (cnn.com) <<--[m
+
+ Further IP addresses:   151.101.193.67 151.101.65.67 151.101.1.67 2a04:4e42::323 2a04:4e42:600::323 2a04:4e42:400::323 2a04:4e42:200::323 
+ rDNS (151.101.129.67):  --
+ Service detected:       HTTP
+
+
+[1m[4m Testing protocols [m[4mvia sockets except NPN+ALPN [m
+
+[1m SSLv2      [m[1;32mnot offered (OK)[m
+[1m SSLv3      [m
+
+Netdiscover 0.3-pre-beta7 [Active/passive arp reconnaissance tool]
+Written by: Jaime Penalba <jpenalbae@gmail.com>
+
+Usage: netdiscover [-i device] [-r range | -l file | -p] [-m file] [-s time] [-n node] [-c count] [-f] [-d] [-S] [-P] [-c]
+  -i device: your network device
+  -r range: scan a given range instead of auto scan. 192.168.6.0/24,/16,/8
+  -l file: scan the list of ranges contained into the given file
+  -p passive mode: do not send anything, only sniff
+  -m file: scan the list of known MACs and host names
+  -F filter: Customize pcap filter expression (default: "arp")
+  -s time: time to sleep between each arp request (milliseconds)
+  -n node: last ip octet used for scanning (from 2 to 253)
+  -c count: number of times to send each arp reques (for nets with packet loss)
+  -f enable fastmode scan, saves a lot of time, recommended for auto
+  -d ignore home config files for autoscan and fast mode
+  -S enable sleep time supression between each request (hardcore mode)
+  -P print results in a format suitable for parsing by another program
+  -N Do not print header. Only valid when -P is enabled.
+  -L in parsable output mode (-P), continue listening after the active scan is completed
+
+If -r, -l or -p are not enabled, netdiscover will scan for common lan addresses.
+
+Netdiscover 0.3-pre-beta7 [Active/passive arp reconnaissance tool]
+Written by: Jaime Penalba <jpenalbae@gmail.com>
+
+Usage: netdiscover [-i device] [-r range | -l file | -p] [-m file] [-s time] [-n node] [-c count] [-f] [-d] [-S] [-P] [-c]
+  -i device: your network device
+  -r range: scan a given range instead of auto scan. 192.168.6.0/24,/16,/8
+  -l file: scan the list of ranges contained into the given file
+  -p passive mode: do not send anything, only sniff
+  -m file: scan the list of known MACs and host names
+  -F filter: Customize pcap filter expression (default: "arp")
+  -s time: time to sleep between each arp request (milliseconds)
+  -n node: last ip octet used for scanning (from 2 to 253)
+  -c count: number of times to send each arp reques (for nets with packet loss)
+  -f enable fastmode scan, saves a lot of time, recommended for auto
+  -d ignore home config files for autoscan and fast mode
+  -S enable sleep time supression between each request (hardcore mode)
+  -P print results in a format suitable for parsing by another program
+  -N Do not print header. Only valid when -P is enabled.
+  -L in parsable output mode (-P), continue listening after the active scan is completed
+
+If -r, -l or -p are not enabled, netdiscover will scan for common lan addresses.
+[1m
+###########################################################
+    testssl.sh       3.0beta from [m[1mhttps://testssl.sh/dev/[m
+[1m    ([m[1;30mfad07c3 2018-07-05 18:55:15 -- [m[1m)[m
+[1m
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ [m[1mhttps://testssl.sh/bugs/[m
+[1m
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2i-dev)" [~183 ciphers]
+ on Mscn:./testssl.sh/bin/openssl.Linux.x86_64
+ (built: "Jun 22 19:32:29 2016", platform: "linux-x86_64")
+
+
+[1mTesting all IPv4 addresses (port 443): [m151.101.65.67 151.101.1.67 151.101.193.67 151.101.129.67
+----------------------------------------------------------------------------------------------------
+[7m Start 2018-07-11 15:56:31        -->> 151.101.65.67:443 (cnn.com) <<--[m
+
+ Further IP addresses:   151.101.129.67 151.101.193.67 151.101.1.67 2a04:4e42::323 2a04:4e42:200::323 2a04:4e42:600::323 2a04:4e42:400::323 
+ rDNS (151.101.65.67):   --
+ Service detected:       HTTP
+
+
+[1m[4m Testing protocols [m[4mvia sockets except NPN+ALPN [m
+
+[1m SSLv2      [m[1;32mnot offered (OK)[m
+[1m SSLv3      [m[1;32mnot offered (OK)[m
+[1m TLS 1      [moffered
+[1m TLS 1.1    [moffered
+[1m TLS 1.2    [m[1;32moffered (OK)[m
+[1m TLS 1.3    [mnot offered
+[1m NPN/SPDY   [mnot offered
+[1m ALPN/HTTP2 [m[0;32mh2[m, http/1.1 (offered)
+
+[1m[4m Testing cipher categories [m
+
+[1m NULL ciphers (no encryption)                  [m[1;32mnot offered (OK)[m
+[1m Anonymous NULL Ciphers (no authentication)    [m[1;32mnot offered (OK)[m
+[1m Export ciphers (w/o ADH+NULL)                 [m[1;32mnot offered (OK)[m
+[1m LOW: 64 Bit + DES encryption (w/o export)     [m[1;32mnot offered (OK)[m
+[1m Weak 128 Bit ciphers (SEED, IDEA, RC[2,4])    [m[0;32mnot offered (OK)[m
+[1m Triple DES Ciphers (Medium)                   [m[0;33moffered[m
+[1m High encryption (AES+Camellia, no AEAD)       [m[0;32moffered (OK)[m
+[1m Strong encryption (AEAD ciphers)              [m[1;32moffered (OK)[m
+
+
+[1m[4m Testing robust (perfect) forward secrecy[m[4m, (P)FS -- omitting Null Authentication/Encryption, 3DES, RC4 [m
+
+[0;32m PFS is offered (OK)[m          ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256
+                              ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA 
+[1m Elliptic curves offered:     [m[0;32mprime256v1[m [0;32msecp384r1[m [0;32msecp521r1[m [0;32mX25519[m 
+
+
+[1m[4m Testing server preferences [m
+
+[1m Has server cipher order?     [m[1;32myes (OK)[m
+[1m Negotiated protocol          [m[1;32mTLSv1.2[m
+[1m Negotiated cipher            [m[1;32mECDHE-RSA-AES128-GCM-SHA256[m, [0;32m256 bit ECDH (P-256)[m
+[1m Cipher order[m
+    TLSv1:     ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA DES-CBC3-SHA 
+    TLSv1.1:   ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA DES-CBC3-SHA 
+    TLSv1.2:   ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES128-SHA
+               ECDHE-RSA-AES256-SHA AES128-GCM-SHA256 AES128-SHA AES256-SHA DES-CBC3-SHA 
+
+
+[1m[4m Testing server defaults (Server Hello) [m
+
+[1m TLS extensions (standard)    [m"renegotiation info/#65281" "server name/#0" "EC point formats/#11" "session ticket/#35" "status request/#5"
+                              "encrypt-then-mac/#22" "extended master secret/#23" "application layer protocol negotiation/#16"
+[1m Session Ticket RFC 5077 hint [m7200 seconds, session tickets keys seems to be rotated < daily
+[1m SSL Session ID support       [myes
+[1m Session Resumption           [mTickets: yes, ID: yes
+[1m TLS clock skew[m               Random values, no fingerprinting possible 
+[1m Signature Algorithm          [m[0;32mSHA256 with RSA[m
+[1m Server key size              [mRSA 2048 bits
+[1m Server key usage             [mDigital Signature, Key Encipherment
+[1m Server extended key usage    [mTLS Web Server Authentication, TLS Web Client Authentication
+[1m Serial / Fingerprints        [m118B21B41454C804E81375F1 / SHA1 BB11615ECB3C099557A1C3BC222B868D5AEA1622
+                              SHA256 5ACAD89F14FCF28645FA0D4B953A6258DB255034792A9FFB8E6DD12AED9A34B6
+[1m Common Name (CN)             [m[3mturner-tls.map.fastly.net[m
+[1m subjectAltName (SAN)         [m[3mturner-tls.map.fastly.net *.api.cnn.com *.api.cnn.io *.api.electiontracker.cnn.com *.api.platform.cnn.com
+                              *.arabic.cnn.com *.artemis.turner.com *.beta.next.cnn.com *.blogs.cnn.com *.client.appletv.cnn.com *.cnn.com *.cnn.io
+                              *.cnnlabs.com *.cnnmoney.com *.cnnmoneystream.com *.cnnv2.com *.config.outturner.com *.corporatemobile.outturner.com
+                              *.data.api.cnn.io *.edition.cnn.com *.edition.i.cdn.cnn.com *.electiontracker.cnn.com *.go.cnn.com *.greatbig.com
+                              *.greatbigstory.com *.greatbigstory.se *.i.cdn.cnn.com *.markets.money.cnn.io *.money.cnn.com *.moneystream.cnn.com
+                              *.next.cnn.com *.odm.platform.cnn.com *.outturner.com *.platform.cnn.com *.section-content.money.cnn.com
+                              *.stage.next.cnn.com *.travel.cnn.com *.turner.com *.www.i.cdn.cnn.com admin.cnnmoney.ch api.electiontracker.cnn.com
+                              api.etp.cnn.com api.platform.cnn.com app.cnn.io arabic.cnn.com client.appletv.cnn.com cnn.com cnn.io cnnlabs.com
+                              cnnmoney.ch cnnmoney.com compositor.api.cnn.com content.cnnmoney.ch dev.admin.cnnmoney.ch dev.client.appletv.cnn.com
+                              dev.cnnmoney.ch dev.content.cnnmoney.ch dev.hypatia.api.cnn.io dev.money.cnn.com edition-m.cnn.com
+                              eightiesyourself.cnn.com graphql.verticals.api.cnn.io hypatia.api.cnn.io i.cdn.travel.cnn.com lite.cnn.com
+                              markets.money.cnn.io money.cnn.com preview.dev.money.cnn.com preview.money.cnn.com preview.qa.money.cnn.com
+                              preview.ref.money.cnn.com preview.train.money.cnn.com preview2.ref.money.cnn.com qa.money.cnn.com ref.admin.cnnmoney.ch
+                              ref.cnnmoney.ch ref.content.cnnmoney.ch ref.hypatia.api.cnn.io ref.money.cnn.com ref2.money.cnn.com stage.cnnmoney.ch
+                              stage.content.cnnmoney.ch stage.edition-m.cnn.com stage.money.cnn.com stage.us-m.cnn.com stage.www-m.cnn.com
+                              train.money.cnn.com us-m.cnn.com www-m.cnn.com www.cnnmoney.ch [m
+[1m Issuer                       [m[3mGlobalSign CloudSSL CA - SHA256 - G3[m ([3mGlobalSign nv-sa[m from [3mBE[m)
+[1m Trust (hostname)             [m[0;32mOk via SAN[m (same w/o SNI)
+[1m Chain of trust[m               [0;32mOk   [m[0;35m[m
+[1m EV cert[m (experimental)       no 
+[1m Certificate Validity (UTC)   [m[0;32m276 >= 60 days[m (2018-07-09 14:59 --> 2019-04-14 12:30)
+[1m # of certificates provided[m   2
+[1m Certificate Revocation List  [m--
+[1m OCSP URI                     [mhttp://ocsp2.globalsign.com/cloudsslsha2g3
+[1m OCSP stapling                [m[0;32moffered[m, [0;32mnot revoked[m
+[1m OCSP must staple extension   [m--
+[1m DNS CAA RR[m (experimental)    [1;33mnot offered[m
+[1m Certificate Transparency     [m[0;32myes[m (certificate extension)
+
+
+[1m[4m Testing HTTP header response @ "/" [m
+
+[1m HTTP Status Code           [m  301 Moved Permanently, redirecting to "https://www.cnn.com/"
+[1m HTTP clock skew              [m-25145 sec from localtime
+[1m Strict Transport Security    [m[1;33mnot offered[m
+[1m Public Key Pinning           [m--
+[1m Server banner                [mVarnish
+[1m Application banner           [m--
+[1m Cookie(s)                    [m2 issued: [0;33mNONE[m secure, [0;33mNONE[m HttpOnly -- maybe better try target URL of 30x
+[1m Security headers             [m[0;36mX-Served-By[m cache-hhn1533-HHN
+[1m Reverse Proxy banner         [m[33m[1mVia(B[m: [33m1(B[m.[33m1(B[m varnish
+                              [33m[1mX-Cache(B[m: HIT
+                              [33m[1mX-Cache(B[m-Hits: [33m0(B[m
+
+
+[1m[4m Testing vulnerabilities [m
+
+[1m Heartbleed[m (CVE-2014-0160)                [1;32mnot vulnerable (OK)[m, no heartbeat extension
+[1m CCS[m (CVE-2014-0224)                       [1;32mnot vulnerable (OK)[m
+[1m Ticketbleed[m (CVE-2016-9244), experiment.  [1;32mnot vulnerable (OK)[m
+[1m ROBOT                                     [m[1;32mnot vulnerable (OK)[m
+[1m Secure Renegotiation [m(CVE-2009-3555)      [1;32mnot vulnerable (OK)[m
+[1m Secure Client-Initiated Renegotiation     [m[0;32mnot vulnerable (OK)[m
+[1m CRIME, TLS [m(CVE-2012-4929)                [0;32mnot vulnerable (OK)[m
+[1m BREACH[m (CVE-2013-3587)                    [1;32mno HTTP compression (OK) [m - only supplied "/" tested
+[1m POODLE, SSL[m (CVE-2014-3566)               [1;32mnot vulnerable (OK)[m
+[1m TLS_FALLBACK_SCSV[m (RFC 7507)              [0;32mDowngrade attack prevention supported (OK)[m
+[1m SWEET32[m (CVE-2016-2183, CVE-2016-6329)    [1;33mVULNERABLE[m, uses 64 bit block ciphers
+[1m FREAK[m (CVE-2015-0204)                     [1;32mnot vulnerable (OK)[m
+[1m DROWN[m (CVE-2016-0800, CVE-2016-0703)      [1;32mnot vulnerable on this host and port (OK)[m
+                                           make sure you don't use this certificate elsewhere with SSLv2 enabled services
+                                           https://censys.io/ipv4?q=5ACAD89F14FCF28645FA0D4B953A6258DB255034792A9FFB8E6DD12AED9A34B6 could help you to find out
+[1m LOGJAM[m (CVE-2015-4000), experimental      [0;32mnot vulnerable (OK):[m no DH EXPORT ciphers, no DH key detected
+[1m BEAST[m (CVE-2011-3389)                     TLS1: [1;33mECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA DES-CBC3-SHA [m
+                                           [1;33mVULNERABLE[m -- but also supports higher protocols  TLSv1.1 TLSv1.2 (likely mitigated)
+[1m LUCKY13[m (CVE-2013-0169), experimental     potentially [1;33mVULNERABLE[m, uses cipher block chaining (CBC) ciphers with TLS. Check patches
+[1m RC4[m (CVE-2013-2566, CVE-2015-2808)        [0;32mno RC4 ciphers detected (OK)[m
+
+
+[1m[4m Testing 364 ciphers via OpenSSL plus sockets against the server, ordered by encryption strength [m
+
+Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Cipher Suite Name (RFC)
+-----------------------------------------------------------------------------------------------------------------------------
+ xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH[0;32m 256[m   AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384              
+ xc028   ECDHE-RSA-AES256-SHA384           ECDH[0;32m 256[m   AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384              
+ xc014   ECDHE-RSA-AES256-SHA              ECDH[0;32m 256[m   AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                 
+ x35     AES256-SHA                        RSA        AES         256      TLS_RSA_WITH_AES_256_CBC_SHA                       
+ xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH[0;32m 256[m   AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256              
+ xc027   ECDHE-RSA-AES128-SHA256           ECDH[0;32m 256[m   AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256              
+ xc013   ECDHE-RSA-AES128-SHA              ECDH[0;32m 256[m   AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                 
+ x9c     AES128-GCM-SHA256                 RSA        AESGCM      128      TLS_RSA_WITH_AES_128_GCM_SHA256                    
+ x2f     AES128-SHA                        RSA        AES         128      TLS_RSA_WITH_AES_128_CBC_SHA                       
+ x0a     DES-CBC3-SHA                      RSA        3DES        168      TLS_RSA_WITH_3DES_EDE_CBC_SHA                      
+
+
+[1m[4m Running client simulations via sockets [m
+
+ Android 4.2.2                TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ Android 4.4.2                TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Android 5.0.0                TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Android 6.0                  TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Android 7.0                  TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Chrome 57 Win 7              TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Chrome 65 Win 7              TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Firefox 53 Win 7             TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Firefox 59 Win 7             TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ IE 6 XP                      No connection
+ IE 7 Vista                   TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ IE 8 Win 7                   TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ IE 8 XP                      TLSv1.0 DES-CBC3-SHA
+ IE 11 Win 7                  TLSv1.2 ECDHE-RSA-AES128-SHA256, [0;32m256 bit ECDH (P-256)[m
+ IE 11 Win 8.1                TLSv1.2 ECDHE-RSA-AES128-SHA256, [0;32m256 bit ECDH (P-256)[m
+ IE 11 Win Phone 8.1          TLSv1.2 ECDHE-RSA-AES128-SHA256, [0;32m256 bit ECDH (P-256)[m
+ IE 11 Win 10                 TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Edge 13 Win 10               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Edge 13 Win Phone 10         TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Edge 15 Win 10               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Opera 17 Win 7               TLSv1.2 ECDHE-RSA-AES128-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Safari 9 iOS 9               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Safari 9 OS X 10.11          TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Safari 10 OS X 10.12         TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Apple ATS 9 iOS 9            TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Tor 17.0.9 Win 7             TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ Java 6u45                    TLSv1.0 AES128-SHA
+ Java 7u25                    TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ Java 8u161                   TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Java 9.0.4                   TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ OpenSSL 1.0.1l               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ OpenSSL 1.0.2e               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+
+[7m Done 2018-07-11 15:59:16 [ 169s] -->> 151.101.65.67:443 (cnn.com) <<--[m
+
+----------------------------------------------------------------------------------------------------
+[7m Start 2018-07-11 15:59:21        -->> 151.101.1.67:443 (cnn.com) <<--[m
+
+ Further IP addresses:   151.101.65.67 151.101.129.67 151.101.193.67 2a04:4e42::323 2a04:4e42:200::323 2a04:4e42:600::323 2a04:4e42:400::323 
+ rDNS (151.101.1.67):    --
+ Service detected:       HTTP
+
+
+[1m[4m Testing protocols [m[4mvia sockets except NPN+ALPN [m
+
+[1m SSLv2      [m[1;32mnot offered (OK)[m
+[1m SSLv3      [m[1;32mnot offered (OK)[m
+[1m TLS 1      [moffered
+[1m TLS 1.1    [moffered
+[1m TLS 1.2    [m[1;32moffered (OK)[m
+[1m TLS 1.3    [mnot offered
+[1m NPN/SPDY   [mnot offered
+[1m ALPN/HTTP2 [m[0;32mh2[m, http/1.1 (offered)
+
+[1m[4m Testing cipher categories [m
+
+[1m NULL ciphers (no encryption)                  [m[1;32mnot offered (OK)[m
+[1m Anonymous NULL Ciphers (no authentication)    [m[1;32mnot offered (OK)[m
+[1m Export ciphers (w/o ADH+NULL)                 [m[1;32mnot offered (OK)[m
+[1m LOW: 64 Bit + DES encryption (w/o export)     [m[1;32mnot offered (OK)[m
+[1m Weak 128 Bit ciphers (SEED, IDEA, RC[2,4])    [m[0;32mnot offered (OK)[m
+[1m Triple DES Ciphers (Medium)                   [m[0;33moffered[m
+[1m High encryption (AES+Camellia, no AEAD)       [m[0;32moffered (OK)[m
+[1m Strong encryption (AEAD ciphers)              [m[1;32moffered (OK)[m
+
+
+[1m[4m Testing robust (perfect) forward secrecy[m[4m, (P)FS -- omitting Null Authentication/Encryption, 3DES, RC4 [m
+
+[0;32m PFS is offered (OK)[m          ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256
+                              ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA 
+[1m Elliptic curves offered:     [m[0;32mprime256v1[m [0;32msecp384r1[m [0;32msecp521r1[m [0;32mX25519[m 
+
+
+[1m[4m Testing server preferences [m
+
+[1m Has server cipher order?     [m[1;32myes (OK)[m
+[1m Negotiated protocol          [m[1;32mTLSv1.2[m
+[1m Negotiated cipher            [m[1;32mECDHE-RSA-AES128-GCM-SHA256[m, [0;32m256 bit ECDH (P-256)[m
+[1m Cipher order[m
+    TLSv1:     ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA DES-CBC3-SHA 
+    TLSv1.1:   ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA DES-CBC3-SHA 
+    TLSv1.2:   ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES128-SHA
+               ECDHE-RSA-AES256-SHA AES128-GCM-SHA256 AES128-SHA AES256-SHA DES-CBC3-SHA 
+
+
+[1m[4m Testing server defaults (Server Hello) [m
+
+[1m TLS extensions (standard)    [m"renegotiation info/#65281" "server name/#0" "EC point formats/#11" "session ticket/#35" "status request/#5"
+                              "encrypt-then-mac/#22" "extended master secret/#23" "application layer protocol negotiation/#16"
+[1m Session Ticket RFC 5077 hint [m7200 seconds, session tickets keys seems to be rotated < daily
+[1m SSL Session ID support       [myes
+[1m Session Resumption           [mTickets: yes, ID: yes
+[1m TLS clock skew[m               Random values, no fingerprinting possible 
+[1m Signature Algorithm          [m[0;32mSHA256 with RSA[m
+[1m Server key size              [mRSA 2048 bits
+[1m Server key usage             [mDigital Signature, Key Encipherment
+[1m Server extended key usage    [mTLS Web Server Authentication, TLS Web Client Authentication
+[1m Serial / Fingerprints        [m118B21B41454C804E81375F1 / SHA1 BB11615ECB3C099557A1C3BC222B868D5AEA1622
+                              SHA256 5ACAD89F14FCF28645FA0D4B953A6258DB255034792A9FFB8E6DD12AED9A34B6
+[1m Common Name (CN)             [m[3mturner-tls.map.fastly.net[m
+[1m subjectAltName (SAN)         [m[3mturner-tls.map.fastly.net *.api.cnn.com *.api.cnn.io *.api.electiontracker.cnn.com *.api.platform.cnn.com
+                              *.arabic.cnn.com *.artemis.turner.com *.beta.next.cnn.com *.blogs.cnn.com *.client.appletv.cnn.com *.cnn.com *.cnn.io
+                              *.cnnlabs.com *.cnnmoney.com *.cnnmoneystream.com *.cnnv2.com *.config.outturner.com *.corporatemobile.outturner.com
+                              *.data.api.cnn.io *.edition.cnn.com *.edition.i.cdn.cnn.com *.electiontracker.cnn.com *.go.cnn.com *.greatbig.com
+                              *.greatbigstory.com *.greatbigstory.se *.i.cdn.cnn.com *.markets.money.cnn.io *.money.cnn.com *.moneystream.cnn.com
+                              *.next.cnn.com *.odm.platform.cnn.com *.outturner.com *.platform.cnn.com *.section-content.money.cnn.com
+                              *.stage.next.cnn.com *.travel.cnn.com *.turner.com *.www.i.cdn.cnn.com admin.cnnmoney.ch api.electiontracker.cnn.com
+                              api.etp.cnn.com api.platform.cnn.com app.cnn.io arabic.cnn.com client.appletv.cnn.com cnn.com cnn.io cnnlabs.com
+                              cnnmoney.ch cnnmoney.com compositor.api.cnn.com content.cnnmoney.ch dev.admin.cnnmoney.ch dev.client.appletv.cnn.com
+                              dev.cnnmoney.ch dev.content.cnnmoney.ch dev.hypatia.api.cnn.io dev.money.cnn.com edition-m.cnn.com
+                              eightiesyourself.cnn.com graphql.verticals.api.cnn.io hypatia.api.cnn.io i.cdn.travel.cnn.com lite.cnn.com
+                              markets.money.cnn.io money.cnn.com preview.dev.money.cnn.com preview.money.cnn.com preview.qa.money.cnn.com
+                              preview.ref.money.cnn.com preview.train.money.cnn.com preview2.ref.money.cnn.com qa.money.cnn.com ref.admin.cnnmoney.ch
+                              ref.cnnmoney.ch ref.content.cnnmoney.ch ref.hypatia.api.cnn.io ref.money.cnn.com ref2.money.cnn.com stage.cnnmoney.ch
+                              stage.content.cnnmoney.ch stage.edition-m.cnn.com stage.money.cnn.com stage.us-m.cnn.com stage.www-m.cnn.com
+                              train.money.cnn.com us-m.cnn.com www-m.cnn.com www.cnnmoney.ch [m
+[1m Issuer                       [m[3mGlobalSign CloudSSL CA - SHA256 - G3[m ([3mGlobalSign nv-sa[m from [3mBE[m)
+[1m Trust (hostname)             [m[0;32mOk via SAN[m (same w/o SNI)
+[1m Chain of trust[m               [0;32mOk   [m[0;35m[m
+[1m EV cert[m (experimental)       no 
+[1m Certificate Validity (UTC)   [m[0;32m276 >= 60 days[m (2018-07-09 14:59 --> 2019-04-14 12:30)
+[1m # of certificates provided[m   2
+[1m Certificate Revocation List  [m--
+[1m OCSP URI                     [mhttp://ocsp2.globalsign.com/cloudsslsha2g3
+[1m OCSP stapling                [m[0;32moffered[m, [0;32mnot revoked[m
+[1m OCSP must staple extension   [m--
+[1m DNS CAA RR[m (experimental)    [1;33mnot offered[m
+[1m Certificate Transparency     [m[0;32myes[m (certificate extension)
+
+
+[1m[4m Testing HTTP header response @ "/" [m
+
+[1m HTTP Status Code           [m  301 Moved Permanently, redirecting to "https://www.cnn.com/"
+[1m HTTP clock skew              [m-25146 sec from localtime
+[1m Strict Transport Security    [m[1;33mnot offered[m
+[1m Public Key Pinning           [m--
+[1m Server banner                [mVarnish
+[1m Application banner           [m--
+[1m Cookie(s)                    [m2 issued: [0;33mNONE[m secure, [0;33mNONE[m HttpOnly -- maybe better try target URL of 30x
+[1m Security headers             [m[0;36mX-Served-By[m cache-hhn1544-HHN
+[1m Reverse Proxy banner         [m[33m[1mVia(B[m: [33m1(B[m.[33m1(B[m varnish
+                              [33m[1mX-Cache(B[m: HIT
+                              [33m[1mX-Cache(B[m-Hits: [33m0(B[m
+
+
+[1m[4m Testing vulnerabilities [m
+
+[1m Heartbleed[m (CVE-2014-0160)                [1;32mnot vulnerable (OK)[m, no heartbeat extension
+[1m CCS[m (CVE-2014-0224)                       [1;32mnot vulnerable (OK)[m
+[1m Ticketbleed[m (CVE-2016-9244), experiment.  [1;32mnot vulnerable (OK)[m
+[1m ROBOT                                     [m[1;32mnot vulnerable (OK)[m
+[1m Secure Renegotiation [m(CVE-2009-3555)      [1;32mnot vulnerable (OK)[m
+[1m Secure Client-Initiated Renegotiation     [m[0;32mnot vulnerable (OK)[m
+[1m CRIME, TLS [m(CVE-2012-4929)                [0;32mnot vulnerable (OK)[m
+[1m BREACH[m (CVE-2013-3587)                    [1;32mno HTTP compression (OK) [m - only supplied "/" tested
+[1m POODLE, SSL[m (CVE-2014-3566)               [1;32mnot vulnerable (OK)[m
+[1m TLS_FALLBACK_SCSV[m (RFC 7507)              [0;32mDowngrade attack prevention supported (OK)[m
+[1m SWEET32[m (CVE-2016-2183, CVE-2016-6329)    [1;33mVULNERABLE[m, uses 64 bit block ciphers
+[1m FREAK[m (CVE-2015-0204)                     [1;32mnot vulnerable (OK)[m
+[1m DROWN[m (CVE-2016-0800, CVE-2016-0703)      [1;32mnot vulnerable on this host and port (OK)[m
+                                           make sure you don't use this certificate elsewhere with SSLv2 enabled services
+                                           https://censys.io/ipv4?q=5ACAD89F14FCF28645FA0D4B953A6258DB255034792A9FFB8E6DD12AED9A34B6 could help you to find out
+[1m LOGJAM[m (CVE-2015-4000), experimental      [0;32mnot vulnerable (OK):[m no DH EXPORT ciphers, no DH key detected
+[1m BEAST[m (CVE-2011-3389)                     TLS1: [1;33mECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA DES-CBC3-SHA [m
+                                           [1;33mVULNERABLE[m -- but also supports higher protocols  TLSv1.1 TLSv1.2 (likely mitigated)
+[1m LUCKY13[m (CVE-2013-0169), experimental     potentially [1;33mVULNERABLE[m, uses cipher block chaining (CBC) ciphers with TLS. Check patches
+[1m RC4[m (CVE-2013-2566, CVE-2015-2808)        [0;32mno RC4 ciphers detected (OK)[m
+
+
+[1m[4m Testing 364 ciphers via OpenSSL plus sockets against the server, ordered by encryption strength [m
+
+Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Cipher Suite Name (RFC)
+-----------------------------------------------------------------------------------------------------------------------------
+ xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH[0;32m 256[m   AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384              
+ xc028   ECDHE-RSA-AES256-SHA384           ECDH[0;32m 256[m   AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384              
+ xc014   ECDHE-RSA-AES256-SHA              ECDH[0;32m 256[m   AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                 
+ x35     AES256-SHA                        RSA        AES         256      TLS_RSA_WITH_AES_256_CBC_SHA                       
+ xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH[0;32m 256[m   AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256              
+ xc027   ECDHE-RSA-AES128-SHA256           ECDH[0;32m 256[m   AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256              
+ xc013   ECDHE-RSA-AES128-SHA              ECDH[0;32m 256[m   AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                 
+ x9c     AES128-GCM-SHA256                 RSA        AESGCM      128      TLS_RSA_WITH_AES_128_GCM_SHA256                    
+ x2f     AES128-SHA                        RSA        AES         128      TLS_RSA_WITH_AES_128_CBC_SHA                       
+ x0a     DES-CBC3-SHA                      RSA        3DES        168      TLS_RSA_WITH_3DES_EDE_CBC_SHA                      
+
+
+[1m[4m Running client simulations via sockets [m
+
+ Android 4.2.2                TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ Android 4.4.2                TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Android 5.0.0                TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Android 6.0                  TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Android 7.0                  TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Chrome 57 Win 7              TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Chrome 65 Win 7              TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Firefox 53 Win 7             TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Firefox 59 Win 7             TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ IE 6 XP                      No connection
+ IE 7 Vista                   TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ IE 8 Win 7                   TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ IE 8 XP                      TLSv1.0 DES-CBC3-SHA
+ IE 11 Win 7                  TLSv1.2 ECDHE-RSA-AES128-SHA256, [0;32m256 bit ECDH (P-256)[m
+ IE 11 Win 8.1                TLSv1.2 ECDHE-RSA-AES128-SHA256, [0;32m256 bit ECDH (P-256)[m
+ IE 11 Win Phone 8.1          TLSv1.2 ECDHE-RSA-AES128-SHA256, [0;32m256 bit ECDH (P-256)[m
+ IE 11 Win 10                 TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Edge 13 Win 10               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Edge 13 Win Phone 10         TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Edge 15 Win 10               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m253 bit ECDH (X25519)[m
+ Opera 17 Win 7               TLSv1.2 ECDHE-RSA-AES128-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Safari 9 iOS 9               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Safari 9 OS X 10.11          TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Safari 10 OS X 10.12         TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Apple ATS 9 iOS 9            TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Tor 17.0.9 Win 7             TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ Java 6u45                    TLSv1.0 AES128-SHA
+ Java 7u25                    TLSv1.0 ECDHE-RSA-AES128-SHA, [0;32m256 bit ECDH (P-256)[m
+ Java 8u161                   TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ Java 9.0.4                   TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ OpenSSL 1.0.1l               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+ OpenSSL 1.0.2e               TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256, [0;32m256 bit ECDH (P-256)[m
+
+[7m Done 2018-07-11 16:01:57 [ 330s] -->> 151.101.1.67:443 (cnn.com) <<--[m
+
+----------------------------------------------------------------------------------------------------
+[7m Start 2018-07-11 16:01:57        -->> 151.101.193.67:443 (cnn.com) <<--[m
+
+ Further IP addresses:   151.101.65.67 151.101.129.67 151.101.1.67 2a04:4e42::323 2a04:4e42:200::323 2a04:4e42:600::323 2a04:4e42:400::323 
+ rDNS (151.101.193.67):  --
+ Service detected:       HTTP
+
+
+[1m[4m Testing protocols [m[4mvia sockets except NPN+ALPN [m
+
+[1m SSLv2      [m[1;32mnot offered (OK)[m
+[1m SSLv3      [m[1;32mnot offered (OK)[m
+[1m TLS 1      [moffered
+[1m TLS 1.1    [moffered
+[1m TLS 1.2    [m[1;32moffered (OK)[m
+[1m TLS 1.3    [mnot offered
+[1m NPN/SPDY   [mnot offered
+[1m ALPN/HTTP2 [m[0;32mh2[m, http/1.1 (offered)
+
+[1m[4m Testing cipher categories [m
+
+[1m NULL ciphers (no encryption)                  [m[1;32mnot offered (OK)[m
+[1m Anonymous NULL Ciphers (no authentication)    [m[1;32mnot offered (OK)[m
+[1m Export ciphers (w/o ADH+NULL)                 [m[1;32mnot offered (OK)[m
+[1m LOW: 64 Bit + DES encryption (w/o export)     [m[1;32mnot offered (OK)[m
+[1m Weak 128 Bit ciphers (SEED, IDEA, RC[2,4])    [m[0;32mnot offered (OK)[m
+[1m Triple DES Ciphers (Medium)                   [m[0;33moffered[m
+[1m High encryption (AES+Camellia, no AEAD)       [m[0;32moffered (OK)[m
+[1m Strong encryption (AEAD ciphers)              [m[1;32moffered (OK)[m
+
+
+[1m[4m Testing robust (perfect) forward secrecy[m[4m, (P)FS -- omitting Null Authentication/Encryption, 3DES, RC4 [m
+
+[0;32m PFS is offered (OK)[m          ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256
+                              ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA 
+[1m Elliptic curves offered:     [m[0;32mprime256v1[m [0;32msecp384r1[m [0;32msecp521r1[m [0;32mX25519[m 
+
+
+[1m[4m Testing server preferences [m
+
+[1m Has server cipher order?     [m[1;32myes (OK)[m
+[1m Negotiated protocol          [m[1;32mTLSv1.2[m
+[1m Negotiated cipher            [m[1;32mECDHE-RSA-AES128-GCM-SHA256[m, [0;32m256 bit ECDH (P-256)[m
+[1m Cipher order[m
+    TLSv1:     ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA DES-CBC3-SHA 
+    TLSv1.1:   ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-SHA AES256-SHA DES-CBC3-SHA 
+    TLSv1.2:   ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES128-SHA
+               ECDHE-RSA-AES256-SHA AES128-GCM-SHA256 AES128-SHA AES256-SHA DES-CBC3-SHA 
+
+
+[1m[4m Testing server defaults (Server Hello) [m
+
+[1m TLS extensions (standard)    [m"renegotiation info/#65281" "server name/#0" "EC point formats/#11" "session ticket/#35" "status request/#5"
+                              "encrypt-then-mac/#22" "extended master secret/#23" "application layer protocol negotiation/#16"
+[1m Session Ticket RFC 5077 hint [m7200 seconds, session tickets keys seems to be rotated < daily
+[1m SSL Session ID support       [myes
+[1m Session Resumption           [mTickets: yes, ID: yes
+[1m TLS clock skew[m               Random values, no fingerprinting possible 
+[1m Signature Algorithm          [m[0;32mSHA256 with RSA[m
+[1m Server key size              [mRSA 2048 bits
+[1m Server key usage             [mDigital Signature, Key Encipherment
+[1m Server extended key usage    [mTLS Web Server Authentication, TLS Web Client Authentication
+[1m Serial / Fingerprints        [m118B21B41454C804E81375F1 / SHA1 BB11615ECB3C099557A1C3BC222B868D5AEA1622
+                              SHA256 5ACAD89F14FCF28645FA0D4B953A6258DB255034792A9FFB8E6DD12AED9A34B6
+[1m Common Name (CN)             [m[3mturner-tls.map.fastly.net[m
+[1m subjectAltName (SAN)         [m[3mturner-tls.map.fastly.net *.api.cnn.com *.api.cnn.io *.api.electiontracker.cnn.com *.api.platform.cnn.com
+                              *.arabic.cnn.com *.artemis.turner.com *.beta.next.cnn.com *.blogs.cnn.com *.client.appletv.cnn.com *.cnn.com *.cnn.io
+                              *.cnnlabs.com *.cnnmoney.com *.cnnmoneystream.com *.cnnv2.com *.config.outturner.com *.corporatemobile.outturner.com
+                              *.data.api.cnn.io *.edition.cnn.com *.edition.i.cdn.cnn.com *.electiontracker.cnn.com *.go.cnn.com *.greatbig.com
+                              *.greatbigstory.com *.greatbigstory.se *.i.cdn.cnn.com *.markets.money.cnn.io *.money.cnn.com *.moneystream.cnn.com
+                              *.next.cnn.com *.odm.platform.cnn.com *.outturner.com *.platform.cnn.com *.section-content.money.cnn.com
+                              *.stage.next.cnn.com *.travel.cnn.com *.turner.com *.www.i.cdn.cnn.com admin.cnnmoney.ch api.electiontracker.cnn.com
+                              api.etp.cnn.com api.platform.cnn.com app.cnn.io arabic.cnn.com client.appletv.cnn.com cnn.com cnn.io cnnlabs.com
+                              cnnmoney.ch cnnmoney.com compositor.api.cnn.com content.cnnmoney.ch dev.admin.cnnmoney.ch dev.client.appletv.cnn.com
+                              dev.cnnmoney.ch dev.content.cnnmoney.ch dev.hypatia.api.cnn.io dev.money.cnn.com edition-m.cnn.com
+                              eightiesyourself.cnn.com graphql.verticals.api.cnn.io hypatia.api.cnn.io i.cdn.travel.cnn.com lite.cnn.com
+                              markets.money.cnn.io money.cnn.com preview.dev.money.cnn.com preview.money.cnn.com preview.qa.money.cnn.com
+                              preview.ref.money.cnn.com preview.train.money.cnn.com preview2.ref.money.cnn.com qa.money.cnn.com ref.admin.cnnmoney.ch
+                              ref.cnnmoney.ch ref.content.cnnmoney.ch ref.hypatia.api.cnn.io ref.money.cnn.com ref2.money.cnn.com stage.cnnmoney.ch
+                              stage.content.cnnmoney.ch stage.edition-m.cnn.com stage.money.cnn.com stage.us-m.cnn.com stage.www-m.cnn.com
+                              train.money.cnn.com us-m.cnn.com www-m.cnn.com www.cnnmoney.ch [m
+[1m Issuer                       [m[3mGlobalSign CloudSSL CA - SHA256 - G3[m ([3mGlobalSign nv-sa[m from [3mBE[m)
+[1m Trust (hostname)             [m[0;32mOk via SAN[m (same w/o SNI)
+[1m Chain of trust[m               [0;32mOk   [m[0;35m[m
+[1m EV cert[m (experimental)       no 
+[1m Certificate Validity (UTC)   [m[0;32m276 >= 60 days[m (2018-07-09 14:59 --> 2019-04-14 12:30)
+[1m # of certificates provided[m   2
+[1m Certificate Revocation List  [m--
+[1m OCSP URI                     [mhttp://ocsp2.globalsign.com/cloudsslsha2g3
+[1m OCSP stapling                [m[0;32moffered[m, [0;32mnot revoked[m
+[1m OCSP must staple extension   [m--
+[1m DNS CAA RR[m (experimental)    [1;33mnot offered[m
+[1m Certificate Transparency     [m[0;32myes[m (certificate extension)
+
+
+[1m[4m Testing HTTP header response @ "/" [m
+

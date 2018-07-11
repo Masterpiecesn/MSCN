@@ -1,0 +1,2 @@
+Discovered open port 443/tcp
+Discovered open port 80/tcp

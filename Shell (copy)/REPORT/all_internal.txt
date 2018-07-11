@@ -1,0 +1,4 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-07-11 15:52 EDT
+Initiating ARP Ping Scan at 15:52
+Scanning 4096 hosts [1 port/host]
+ARP Ping Scan Timing: About 39.36% done; ETC: 15:53 (0:00:48 remaining)
